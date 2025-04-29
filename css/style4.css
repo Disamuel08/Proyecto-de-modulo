@@ -11,6 +11,63 @@ header {
     padding: 10px 30px;
     background-color: #111;
 }
+
+@media(max-width:989px){
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media  (max-width:789px) {
+    .nav-contenedor{
+        flex-direction: column;
+    }
+
+    .producto{
+        flex-direction: column;
+    }
+
+    .imagen{
+        order: 1;
+    }
+
+    .info{
+        order: 2;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .nav-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .buscador {
+        width: 100%; 
+        margin: 10px auto;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
 .logo {
     font-size: 24px;
     font-family: 'Black Ops One', cursive;
@@ -76,6 +133,7 @@ h1 {
     align-items: center;
     max-width: 800px;
     margin: auto;
+    flex-direction: column;
 }
   
 .imagen img {
